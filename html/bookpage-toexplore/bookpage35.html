@@ -1,0 +1,247 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/global.css" />
+    <link rel="stylesheet" href="../../style/bookpage.css" />
+    <link rel="icon" href="../../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Lessons in Chemistry</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../../index.html">
+        <img
+          class="logo"
+          src="../../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/fiction.html">Horror/Thriller</a>
+              <a href="../../html/fiction.html"> Romance</a>
+              <a href="../../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/non-fiction.html">Cooking</a>
+              <a href="../../html/non-fiction.html">Traveling</a>
+              <a href="../../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/more-to-explore.html">Best Sellers</a>
+              <a href="../../html/more-to-explore.html">Manga Collection</a>
+              <a href="../../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Book's path breadcrumb-->
+      <p class="breadcrumb">
+        <a href="../../index.html">Home</a>/<a
+          href="../../html/more-to-explore.html"
+          >More To Explore</a
+        >/Lessons in Chemistry
+      </p>
+      <section class="book-general">
+        <div class="image">
+          <div class="main-image">
+            <img
+              src="../../assets/images/more-to-explore/shb3.png"
+              alt="second-hand3"
+            />
+          </div>
+          <div class="sub-images">
+            <img
+              src="../../assets/images/more-to-explore/secondhand/sh3/chemistrypic2.png"
+              alt="pic2"
+            />
+            <img
+              src="../../assets/images/more-to-explore/secondhand/sh3/chemistrypic3.png"
+              alt="pic3"
+            />
+            <img
+              src="../../assets/images/more-to-explore/secondhand/sh3/chemistrypic4.png"
+              alt="pic4"
+            />
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-container">
+            <h1>Lessons in Chemistry</h1>
+            <p>by <span>Bonnie Garmus</span></p>
+            <div class="star-container">
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>4.5/5</p>
+            </div>
+
+            <p class="price">Price: 9.99€</p>
+            <p>Publisher: Doubleday; 1st Edition (April 5, 2022)</p>
+            <p>Paperback: 400 pages</p>
+            <p>Language: English</p>
+            <p>
+              Genre: Best sellers,Mothers & Children Fiction,Humorous Fiction
+            </p>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-detail">
+        <h1 class="book-detail-header">Book Detail</h1>
+        <div class="book-detail-content">
+          <p>
+            Chemist Elizabeth Zott is not your average woman. In fact, Elizabeth
+            Zott would be the first to point out that there is no such thing as
+            an average woman. But it’s the early 1960s and her all-male team at
+            Hastings Research Institute takes a very unscientific view of
+            equality. Except for one: Calvin Evans; the lonely, brilliant,
+            Nobel–prize nominated grudge-holder who falls in love with—of all
+            things—her mind. True chemistry results.
+            <br />
+            But like science, life is unpredictable. Which is why a few years
+            later Elizabeth Zott finds herself not only a single mother, but the
+            reluctant star of America’s most beloved cooking show Supper at Six.
+            Elizabeth’s unusual approach to cooking (“combine one tablespoon
+            acetic acid with a pinch of sodium chloride”) proves revolutionary.
+            But as her following grows, not everyone is happy. Because as it
+            turns out, Elizabeth Zott isn’t just teaching women to cook. She’s
+            daring them to change the status quo. <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="review">
+        <h1 class="review-header">Review</h1>
+        <div class="review-content">
+          <div class="reviewer">
+            <div class="avatar">
+              <img src="../../assets/images/bookpage/iconpfp.png" alt="icon" />
+            </div>
+            <div class="reviewer-info">
+              <p>By Bibliophile, April 19, 2023</p>
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comment">
+            This book was a refreshing tale of fiction, or was it? Elizabeth
+            Zott was a brilliant scientist in the 1960s. This was a time when
+            women were told to stay in the kitchen. Yet, the suppression of
+            women hasn't ended, really. As a woman myself, I went through many
+            of the same types of things this character did. So many women have.
+            This is from being taken less seriously than a man to being passed
+            over for promotions so a man could take the reigns. <br />
+            The story takes many surprising turns, which makes it a natural page
+            turner. The dog in the story is integrated as a fascinating
+            character in its own right. Many of the unbelievable aspects of the
+            main character are actually drawn from real life. Societal norms are
+            not real but forced upon intelligent individuals. Society forces
+            segments of the population into a corner in an attempt to keep them
+            from succeeding. Many men may not relate to this tale, but women
+            surely can. I recommend this book for all the women or anyone for
+            that matter whose sights, they are told, exceed their grasp. This is
+            for those individuals who need to listen to their heart and mind
+            instead of those of the oppressors.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

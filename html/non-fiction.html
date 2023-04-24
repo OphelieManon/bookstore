@@ -1,0 +1,349 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/non-fiction.css" />
+    <link rel="icon" href="../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Non Fiction</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../index.html">
+        <img
+          class="logo"
+          src="../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/fiction.html">Horror/Thriller</a>
+              <a href="../html/fiction.html"> Romance</a>
+              <a href="../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="#cooking">Cooking</a>
+              <a href="#travel">Traveling</a>
+              <a href="#sci-tech">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/more-to-explore.html">Best Sellers</a>
+              <a href="../html/more-to-explore.html">Manga Collection</a>
+              <a href="../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-container">
+      <div class="img2">
+        <div class="img"></div>
+      </div>
+      <div class="img1">
+        <img
+          src="../assets/images/non-fiction/bannerpicnonfiction2.png"
+          alt="bannerpic2"
+        />
+        <div class="banner-text-img">
+          <p>Best Selected</p>
+          <br />
+          <p>Non-Fiction Books</p>
+          <br />
+          <p>of 2022</p>
+        </div>
+      </div>
+    </section>
+    <!-- Categories -->
+    <main>
+      <!-- Travling Category -->
+      <section id="travel" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1>
+            <a href="#travel">Traveling</a>
+          </h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage13.html"
+              ><img
+                src="../assets/images/non-fiction/traveling1.png"
+                alt="traveling1"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage13.html"
+              class="book-name"
+              >The Bucket List</a
+            >
+            <p class="book-author">by Kath Stathers</p>
+            <p class="book-price">19.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage14.html"
+              ><img
+                src="../assets/images/non-fiction/traveling2.png"
+                alt="traveling2"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage14.html"
+              class="book-name"
+              >Winston the Traveling Dog</a
+            >
+            <p class="book-author">by Cynthia Anne Finefrock</p>
+            <p class="book-price">5.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage15.html"
+              ><img
+                src="../assets/images/non-fiction/traveling3.png"
+                alt="traveling3"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage15.html"
+              class="book-name"
+              >The Traveling Stones:A Memoir
+            </a>
+            <p class="book-author">by Celeste Weaver</p>
+            <p class="book-price">14.90€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage16.html"
+              ><img
+                src="../assets/images/non-fiction/traveling4.png"
+                alt="traveling4"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage16.html"
+              class="book-name"
+              >Traveling Light: Poems</a
+            >
+            <p class="book-author">by Linda Pastan</p>
+            <p class="book-price">10.24€</p>
+          </div>
+        </div>
+      </section>
+      <!-- Cooking and Food Category -->
+      <section id="cooking" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#cooking">Cooking and Food</a></h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage17.html"
+              ><img src="../assets/images/non-fiction/cook1.png" alt="cook1"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage17.html"
+              class="book-name"
+              >Half Baked Harvest Cookbook</a
+            >
+            <p class="book-author">by Tieghan Gerard</p>
+            <p class="book-price">37.18€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage18.html"
+              ><img src="../assets/images/non-fiction/cook2.png" alt="cook2"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage18.html"
+              class="book-name"
+              >Magnolia Table</a
+            >
+            <p class="book-author">by Joanna Gaines</p>
+            <p class="book-price">14.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage19.html"
+              ><img src="../assets/images/homepage/non-fiction1.png" alt="cook3"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage19.html"
+              class="book-name"
+              >The Mediterranean Dish</a
+            >
+            <p class="book-author">by Suzy Karadsheh</p>
+            <p class="book-price">18.75€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage20.html">
+              <img src="../assets/images/non-fiction/cook4.png" alt="cook4"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage20.html"
+              class="book-name"
+              >The Wok: Recipes and Techniques</a
+            >
+            <p class="book-author">by J. Kenji Lopez-Alt</p>
+            <p class="book-price">47.23€</p>
+          </div>
+        </div>
+      </section>
+      <!-- Science and Tech Category -->
+      <section id="sci-tech" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#sci-tech">Science and Tech</a></h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage21.html"
+              ><img
+                src="../assets/images/non-fiction/science1.png"
+                alt="science1"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage21.html"
+              class="book-name"
+              >Portals</a
+            >
+            <p class="book-author">by Douglas E. Richards</p>
+            <p class="book-price">4.90€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage22.html"
+              ><img
+                src="../assets/images/non-fiction/science2.png"
+                alt="science2"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage22.html"
+              class="book-name"
+              >Project Hail Mary</a
+            >
+            <p class="book-author">by Andy Weir</p>
+            <p class="book-price">24.90€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage23.html"
+              ><img
+                src="../assets/images/non-fiction/science3.png"
+                alt="sciencec3"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage23.html"
+              class="book-name"
+              >The Society</a
+            >
+            <p class="book-author">by Jonathan Sol</p>
+            <p class="book-price">4.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-nonfiction/bookpage24.html"
+              ><img
+                src="../assets/images/non-fiction/science4.png"
+                alt="science4"
+            /></a>
+            <a
+              href="../html/bookpage-nonfiction/bookpage24.html"
+              class="book-name"
+              >Lost in Time</a
+            >
+            <p class="book-author">by A.G. Riddle</p>
+            <p class="book-price">17.90€</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li><a href="">Copyright</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

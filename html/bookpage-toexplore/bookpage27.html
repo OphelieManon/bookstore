@@ -1,0 +1,224 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/global.css" />
+    <link rel="stylesheet" href="../../style/bookpage.css" />
+    <link rel="icon" href="../../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>The Chronicles of Narnia</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../../index.html">
+        <img
+          class="logo"
+          src="../../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/fiction.html">Horror/Thriller</a>
+              <a href="../../html/fiction.html"> Romance</a>
+              <a href="../../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/non-fiction.html">Cooking</a>
+              <a href="../../html/non-fiction.html">Traveling</a>
+              <a href="../../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/more-to-explore.html">Best Sellers</a>
+              <a href="../../html/more-to-explore.html">Manga Collection</a>
+              <a href="../../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Book's path breadcrumb-->
+      <p class="breadcrumb">
+        <a href="../../index.html">Home</a>/<a
+          href="../../html/more-to-explore.html"
+          >More To Explore</a
+        >/The Chronicles of Narnia
+      </p>
+      <section class="book-general">
+        <div class="image">
+          <div class="main-image">
+            <img
+              src="../../assets/images/more-to-explore/bs3.png"
+              alt="best-sellers3"
+            />
+          </div>
+          <div class="sub-images">
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs3/narniapic2.png"
+              alt="pic2"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs3/narniapic3.png"
+              alt="pic3"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs3/narniapic4.png"
+              alt="pic4"
+            />
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-container">
+            <h1>The Chronicles of Narnia</h1>
+            <p>by <span>C.S. Lewis</span></p>
+            <div class="star-container">
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>4.5/5</p>
+            </div>
+
+            <p class="price">Price: 18.99€</p>
+            <p>Publisher: HarperCollins (October 1, 2001)</p>
+            <p>Paperback: 768 pages</p>
+            <p>Dimensions: 6 x 1.92 x 9 inches</p>
+            <p>Genre: Best sellers, Children's Classic, Fantasy and Magic</p>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-detail">
+        <h1 class="book-detail-header">Book Detail</h1>
+        <div class="book-detail-content">
+          <p>
+            Epic battles between good and evil, fantastic creatures, betrayals,
+            heroic deeds, and friendships won and lost all come together in this
+            unforgettable world, which has been enchanting readers of all ages
+            for over sixty years. <br />
+            This edition presents the seven books—The Magician's Nephew; The
+            Lion, the Witch and the Wardrobe; The Horse and His Boy; Prince
+            Caspian; The Voyage of the Dawn Treader; The Silver Chair; and The
+            Last Battle—unabridged and arranged in C. S. Lewis's preferred
+            order. Each chapter is graced with an illustration by the original
+            artist, Pauline Baynes. <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="review">
+        <h1 class="review-header">Review</h1>
+        <div class="review-content">
+          <div class="reviewer">
+            <div class="avatar">
+              <img src="../../assets/images/bookpage/iconpfp.png" alt="icon" />
+            </div>
+            <div class="reviewer-info">
+              <p>By JSB, April 4, 2023</p>
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comment">
+            These stories were written for children, but I have read them
+            numerous times in my adult life. The Chronicals of Narnia is a
+            masterpiece!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

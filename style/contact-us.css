@@ -1,0 +1,319 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive */
+
+/* Reset form's components */
+input{
+    outline: none;
+}
+textarea {
+    outline: none;
+    padding: 5px;
+}
+
+select {
+    outline: none;
+}
+/* Banner styling */
+
+.banner-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #d1b791;
+  height: 100vh;
+}
+.img1 {
+  width: 50%;
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  width: 50%;
+  position: relative;
+}
+
+.img2 .img {
+  background: url("../assets/images/contact-us/bannercontactpage1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40%;
+  width: 45%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  padding: 5px;
+}
+
+.banner-text p {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  font-family: "Montserrat", serif;
+}
+.banner-text div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+/* Contact form styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #d1b791;
+  border-radius: 10px;
+  padding: 40px;
+  font-family: "Montserrat", serif;
+}
+
+.form-container h1 {
+  margin: 25px;
+  color: #04431d;
+  font-family: "Montserrat", serif;
+}
+.contact-purpose {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact-purpose select {
+  color: rgba(29, 25, 19, 0.644);
+}
+.contact-purpose label {
+  width: 50%;
+  display: block;
+}
+.contact-purpose select {
+  width: 50%;
+  border: 1px solid #d1b791;
+}
+
+.user-information {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user-information label {
+  width: 50%;
+  display: block;
+}
+.user-information input {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #d1b791;
+}
+
+.contact-preference {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-preference-label {
+  width: 50%;
+}
+
+.checkbox-container {
+  width: 50%;
+  display: flex;
+}
+
+.checkbox-container div {
+  width: 50%;
+  display: flex;
+}
+
+.checkbox-container div label {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.newsletter {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.newsletter-label {
+  width: 50%;
+}
+
+.radio-container {
+  width: 50%;
+  display: flex;
+}
+
+.radio-container div {
+  width: 50%;
+  display: flex;
+}
+
+.radio-container div label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-note {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.text-note label {
+  width: 50%;
+}
+
+.text-note textarea {
+  resize: none;
+  width: 50%;
+  border: 1px solid #d1b791;
+}
+
+.button-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  padding: 15px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid #d1b791;
+  background-color: rgba(236, 236, 232, 0.397);
+  cursor: pointer;
+  font-family: 'Montserrat', serif;
+}
+.button-container button:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .contact-form {
+    padding: 15px;
+    width: 90%;
+  }
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    width: 100%;
+  }
+  .contact-purpose {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-purpose label {
+    width: 100%;
+  }
+  .contact-purpose select {
+    width: 100%;
+  }
+
+  .user-information {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .user-information label {
+    width: 100%;
+  }
+
+  .user-information input {
+    width: 100%;
+  }
+
+  .contact-preference {
+    width: 100%;
+  }
+
+  .contact-preference-label {
+    width: 40%;
+  }
+
+  .checkbox-container {
+    width: 60%;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .newsletter-label {
+    width: 40%;
+  }
+  .radio-container {
+    width: 60%;
+  }
+
+  .text-note {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text-note label {
+    width: 100%;
+  }
+
+  .text-note textarea {
+    width: 100%;
+  }
+  .button-container button{
+    margin-right: 10px;
+  }
+}

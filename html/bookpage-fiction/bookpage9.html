@@ -1,0 +1,232 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/global.css" />
+    <link rel="stylesheet" href="../../style/bookpage.css" />
+    <link rel="icon" href="../../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Fairy Tale</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../../index.html">
+        <img
+          class="logo"
+          src="../../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/fiction.html">Horror/Thriller</a>
+              <a href="../../html/fiction.html"> Romance</a>
+              <a href="../../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/non-fiction.html">Cooking</a>
+              <a href="../../html/non-fiction.html">Traveling</a>
+              <a href="../../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/more-to-explore.html">Best Sellers</a>
+              <a href="../../html/more-to-explore.html">Manga Collection</a>
+              <a href="../../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Book's path breadcrumb-->
+      <p class="breadcrumb">
+        <a href="../../index.html">Home</a>/<a href="../../html/fiction.html"
+          >Fiction</a
+        >>Fairy Tale
+      </p>
+      <section class="book-general">
+        <div class="image">
+          <div class="main-image">
+            <img
+              src="../../assets/images/fiction/fantasy1.png"
+              alt="fantasy1"
+            />
+          </div>
+          <div class="sub-images">
+            <img
+              src="../../assets/images/fiction/fantasy/fantasy1/fairypic2.png"
+              alt="pic2"
+            />
+            <img
+              src="../../assets/images/fiction/fantasy/fantasy1/fairypic3.png"
+              alt="pic3"
+            />
+            <img
+              src="../../assets/images/fiction/fantasy/fantasy1/fairypic4.png"
+              alt="pic4"
+            />
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-container">
+            <h1>Fairy Tale</h1>
+            <p>by <span>Stephen King</span></p>
+            <div class="star-container">
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>4.5/5</p>
+            </div>
+
+            <p class="price">Price: 16.00€</p>
+            <p>Publisher: Scribner (June 6, 2023)</p>
+            <p>Paperback: 624 pages</p>
+            <p>Dimensions: 5.5 x 1.44 x 8.38 inches</p>
+            <p>Genre: Dark Fantasy, Suspense Thrillers</p>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-detail">
+        <h1 class="book-detail-header">Book Detail</h1>
+        <div class="book-detail-content">
+          <p>
+            Charlie Reade looks like a regular high school kid, great at
+            baseball and football, a decent student. But he carries a heavy
+            load. His mom was killed in a hit-and-run accident when he was ten,
+            and grief drove his dad to drink. Charlie learned how to take care
+            of himself—and his dad. When Charlie is seventeen, he meets a dog
+            named Radar and her aging master, Howard Bowditch, a recluse in a
+            big house at the top of a big hill, with a locked shed in the
+            backyard. Sometimes strange sounds emerge from it.<br />
+            Charlie starts doing jobs for Mr. Bowditch and loses his heart to
+            Radar. Then, when Bowditch dies, he leaves Charlie a cassette tape
+            telling a story no one would believe. What Bowditch knows, and has
+            kept secret all his long life, is that inside the shed is a portal
+            to another world.
+            <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="review">
+        <h1 class="review-header">Review</h1>
+        <div class="review-content">
+          <div class="reviewer">
+            <div class="avatar">
+              <img src="../../assets/images/bookpage/iconpfp.png" alt="icon" />
+            </div>
+            <div class="reviewer-info">
+              <p>By mark , April 18, 2023</p>
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comment">
+            His work is always enthralling. Charlie is a super main character
+            and all the other characters are effective in adding to the story. I
+            fell for Races just like Charlie. I Love novels that take me places
+            and that is why I read everything Steven King puts out. This book
+            reminds me of the fantasy novels I read as a young man but there is
+            so much more action that it just keeps flowing and you never want to
+            stop reading. I highly recommend this book. Thank you for sharing it
+            Mr. King.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

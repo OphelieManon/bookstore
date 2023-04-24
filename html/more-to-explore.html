@@ -1,0 +1,344 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/more-to-explore.css" />
+    <link rel="icon" href="../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>More To Explore</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../index.html">
+        <img
+          class="logo"
+          src="../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/fiction.html">Horror/Thriller</a>
+              <a href="../html/fiction.html"> Romance</a>
+              <a href="../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/non-fiction.html">Cooking</a>
+              <a href="../html/non-fiction.html">Traveling</a>
+              <a href="../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="#best-sellers">Best Sellers</a>
+              <a href="#manga-collection">Manga Collection</a>
+              <a href="#second-hand-books">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Banner -->
+    <section class="banner-container">
+      <div class="img2">
+        <div class="img"></div>
+      </div>
+      <div class="img1">
+        <img
+          src="../assets/images/more-to-explore/bannerpic2.png"
+          alt="bannerpic2"
+        />
+        <div class="banner-text-img">
+          <p>Best Selected</p>
+          <br />
+          <p>Books on</p>
+          <br />
+          <p>our website</p>
+        </div>
+      </div>
+    </section>
+    <!-- Categories -->
+    <main>
+      <!-- Best Seller -->
+      <section id="best-sellers" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#best-sellers">Best Sellers</a></h1>
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage25.html"
+              ><img
+                src="../assets/images/more-to-explore/bs1.png"
+                alt="bestseller1"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage25.html"
+              class="book-name"
+              >The little prince(Le Petit Prince)</a
+            >
+            <p class="book-author">by Antoine de Saint-Exupéry</p>
+            <p class="book-price">6.89€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage26.html"
+              ><img
+                src="../assets/images/more-to-explore/bs2.png"
+                alt="bestseller2"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage26.html"
+              class="book-name"
+              >A song of ice and fire</a
+            >
+            <p class="book-author">by George R.R. Martin</p>
+            <p class="book-price">12.37€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage27.html"
+              ><img
+                src="../assets/images/more-to-explore/bs3.png"
+                alt="bestseller3"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage27.html"
+              class="book-name"
+              >The Chronicles of Narnia</a
+            >
+            <p class="book-author">by C.S. Lewis</p>
+            <p class="book-price">18.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage28.html"
+              ><img
+                src="../assets/images/more-to-explore/bs4.png"
+                alt="bestseller4"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage28.html"
+              class="book-name"
+              >The Eye of the World</a
+            >
+            <p class="book-author">by Robert Jordan</p>
+            <p class="book-price">27.49€</p>
+          </div>
+        </div>
+      </section>
+      <!-- Manga Collection -->
+      <section id="manga-collection" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#manga-collection">Manga Collection</a></h1>
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage29.html"
+              ><img src="../assets/images/more-to-explore/mc1.png" alt="manga1"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage29.html"
+              class="book-name"
+              >One Piece, Vol. 12</a
+            >
+            <p class="book-author">by Eiichiro Oda</p>
+            <p class="book-price">8.50€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage30.html"
+              ><img src="../assets/images/more-to-explore/mc2.png" alt="manga2"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage30.html"
+              class="book-name"
+              >Ao Haru Ride, Vol. 6</a
+            >
+            <p class="book-author">by Io Sakisaka</p>
+            <p class="book-price">10.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage31.html"
+              ><img src="../assets/images/more-to-explore/mc3.png" alt="manga3"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage31.html"
+              class="book-name"
+              >Bleach, Vol.25</a
+            >
+            <p class="book-author">by Tite Kudo</p>
+            <p class="book-price">10.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage32.html"
+              ><img src="../assets/images/more-to-explore/mc4.png" alt="manga4"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage32.html"
+              class="book-name"
+              >Haikyu!!, Vol.34</a
+            >
+            <p class="book-author">by Haruichi Furudate</p>
+            <p class="book-price">10.99€</p>
+          </div>
+        </div>
+      </section>
+      <!-- Second Hand Books -->
+      <section id="second-hand-books" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#second-hand-books">Second Hand Books</a></h1>
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage33.html"
+              ><img
+                src="../assets/images/more-to-explore/shb1.png"
+                alt="usedbook1"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage33.html"
+              class="book-name"
+              >The Maze Runner, Book 1</a
+            >
+            <p class="book-author">by James Dashner</p>
+            <p class="book-price">5.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage34.html"
+              ><img
+                src="../assets/images/more-to-explore/shb2.png"
+                alt="usedbook2"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage34.html"
+              class="book-name"
+              >The Hunger Games</a
+            >
+            <p class="book-author">by Suzanne Collins</p>
+            <p class="book-price">16.61€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage35.html"
+              ><img
+                src="../assets/images/more-to-explore/shb3.png"
+                alt="usedbook3"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage35.html"
+              class="book-name"
+              >Lessons in Chemistry</a
+            >
+            <p class="book-author">by Bonnie Garmus</p>
+            <p class="book-price">9.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-toexplore/bookpage36.html"
+              ><img
+                src="../assets/images/more-to-explore/shb4.png"
+                alt="usedbook4"
+            /></a>
+            <a
+              href="../html/bookpage-toexplore/bookpage36.html"
+              class="book-name"
+              >The Boys from Biloxi</a
+            >
+            <p class="book-author">by John Grisham</p>
+            <p class="book-price">10.90€</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/global.css" />
+    <link rel="stylesheet" href="../../style/bookpage.css" />
+    <link rel="icon" href="../../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>The Chronicles of Narnia</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../../index.html">
+        <img
+          class="logo"
+          src="../../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/fiction.html">Horror/Thriller</a>
+              <a href="../../html/fiction.html"> Romance</a>
+              <a href="../../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/non-fiction.html">Cooking</a>
+              <a href="../../html/non-fiction.html">Traveling</a>
+              <a href="../../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/more-to-explore.html">Best Sellers</a>
+              <a href="../../html/more-to-explore.html">Manga Collection</a>
+              <a href="../../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Book's path breadcrumb-->
+      <p class="breadcrumb">
+        <a href="../../index.html">Home</a>/<a
+          href="../../html/more-to-explore.html"
+          >More To Explore</a
+        >/The Eye of the World
+      </p>
+      <section class="book-general">
+        <div class="image">
+          <div class="main-image">
+            <img
+              src="../../assets/images/more-to-explore/bs4.png"
+              alt="best-sellers4"
+            />
+          </div>
+          <div class="sub-images">
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs4/eyepic2.png"
+              alt="pic2"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs4/eyepic3.png"
+              alt="pic3"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs4/eyepic4.png"
+              alt="pic4"
+            />
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-container">
+            <h1>The Chronicles of Narnia</h1>
+            <p>by <span>Robert Jordan</span></p>
+            <div class="star-container">
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>4.5/5</p>
+            </div>
+
+            <p class="price">Price: 27.49€</p>
+            <p>
+              Publisher: Tor Fantasy; First Printing. edition (November 15,
+              1990)
+            </p>
+            <p>Paperback: 832 pages</p>
+            <p>Dimensions: 4.2 x 1.35 x 6.82 inches</p>
+            <p>Genre: Best sellers, Epic Fantasy, Military Fantasy</p>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-detail">
+        <h1 class="book-detail-header">Book Detail</h1>
+        <div class="book-detail-content">
+          <p>
+            The Wheel of Time turns and Ages come and pass, leaving memories
+            that become legend. Legend fades to myth, and even myth is long
+            forgotten when the Age that gave it birth returns again. What was,
+            what will be, and what is, may yet fall under the Shadow.<br />
+            Moiraine Damodred arrives in Emond’s Field on a quest to find the
+            one prophesized to stand against The Dark One, a malicious entity
+            sowing the seeds of chaos and destruction. When a vicious band of
+            half-men, half beasts invade the village seeking their master’s
+            enemy, Moiraine persuades Rand al’Thor and his friends to leave
+            their home and enter a larger unimaginable world filled with dangers
+            waiting in the shadows and in the light. <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="review">
+        <h1 class="review-header">Review</h1>
+        <div class="review-content">
+          <div class="reviewer">
+            <div class="avatar">
+              <img src="../../assets/images/bookpage/iconpfp.png" alt="icon" />
+            </div>
+            <div class="reviewer-info">
+              <p>By A. C., November 15, 2020</p>
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comment">
+            I first read this whole series (14 books in total) some 10 years ago
+            and liked the "grown up-ness" of the storytelling. As a firm LOTR
+            book lover, this is the standard by which I judge all other fantasy
+            stories. Coming back to the WOT series has been like seeing an old
+            friend after many years, its familiar yet you discover new facets
+            with the reading. The characters are 'real' people with the fears,
+            the loves, the desires of people you meet every day. The tale has
+            something of an "old fashioned seriousness" regarding the concept of
+            good vs. evil which always appeals to me as a (slightly) older
+            reader. It is an epic tale and for those who like to get to the end
+            quickly, this might not be for you.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

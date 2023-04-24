@@ -1,0 +1,387 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp , https://alvarotrigo.com/blog/website-footers/ : footer idea, <a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Little Rivendell Bookstore</title>
+    <link rel="icon" href="assets/images/browser-icon.png">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Containing only the logo picture and title -->
+      <a class="logo-container" href="index.html">
+        <img
+          class="logo"
+          src="assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+      <!-- Navigation bar using unordered list-->
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop"><a href="html/fiction.html">Fiction</a></li>
+            <div class="dropdown-btn">
+              <a href="html/fiction.html">Horror/Thriller</a>
+              <a href="html/fiction.html"> Romance</a>
+              <a href="html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="html/non-fiction.html">Cooking</a>
+              <a href="html/non-fiction.html">Traveling</a>
+              <a href="html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="html/more-to-explore.html">Best Sellers</a>
+              <a href="html/more-to-explore.html">Manga Collection</a>
+              <a href="html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contains two pictures and some text boxes for the "coverpage/banner" of the Homepage -->
+    <section class="banner-container">
+      <div class="img2">
+        <div class="img"></div>
+        <div class="banner-text">
+          <p>Best books of 2022</p>
+          <p>Come check out our best sellers on our website</p>
+          <div>
+            <a href="html/more-to-explore.html">More To Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <img src="assets/images/homepage/banner2.png" alt="bannerpic2" />
+      </div>
+    </section>
+    <!-- Main contains all the categories (3 categories and each has 4 books) -->
+    <main>
+      <!-- Category -->
+      <section class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1>
+            <a href="html/fiction.html">Fiction</a>
+          </h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="html/bookpage-fiction/bookpage5.html"
+              ><img src="assets/images/homepage/fiction1.jpg" alt="fiction1"
+            /></a>
+            <a href="html/bookpage-fiction/bookpage5.html" class="book-name"
+              >It ends with us</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">10,31€</p>
+          </div>
+          <hr />
+          <!-- To access the book detail page it is only possible through the image and the book name -->
+          <div class="book">
+            <a href="html/bookpage-fiction/bookpage6.html"
+              ><img src="assets/images/homepage/fiction2.jpg" alt="fiction2"
+            /></a>
+            <a href="html/bookpage-fiction/bookpage6.html" class="book-name"
+              >It starts with us</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">36.23€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-fiction/bookpage3.html"
+              ><img src="assets/images/homepage/fiction3.png" alt="fiction3"
+            /></a>
+            <a href="html/bookpage-fiction/bookpage3.html" class="book-name"
+              >The Last Thing He Told Me</a
+            >
+            <p class="book-author">by John Grisham</p>
+            <p class="book-price">15.69€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-fiction/bookpage12.html"
+              ><img src="assets/images/homepage/fiction4.png" alt="fiction4"
+            /></a>
+            <a href="html/bookpage-fiction/bookpage12.html" class="book-name"
+              >The Left Hand of Darkness</a
+            >
+            <p class="book-author">by Ursula K. Le Guin</p>
+            <p class="book-price">17.12€</p>
+          </div>
+          <a href="html/fiction.html">
+            <!-- Adding an icon that will give access to the specific category -->
+            <i
+              class="fa-solid fa-angles-right fa-2xl"
+              style="color: #d0b690"
+            ></i>
+          </a>
+        </div>
+      </section>
+      <!-- From here, the code is repeated twice since I have three categories in total -->
+      <!-- Category -->
+      <section class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1>
+            <a href="html/non-fiction.html">Non Fiction</a>
+          </h1>
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="html/bookpage-nonfiction/bookpage19.html"
+              ><img src="assets/images/homepage/non-fiction1.png" alt="non-fiction1"
+            /></a>
+            <a
+              href="html/bookpage-nonfiction/bookpage19.html"
+              class="book-name"
+              >The Mediterranean Dish</a>
+            <p class="book-author">by Suzy Karadsheh</p>
+            <p class="book-price">18.75€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-nonfiction/bookpage15.html"
+              ><img
+                src="assets/images/non-fiction/traveling3.png"
+                alt="non-fiction2"
+            /></a>
+            <a
+              href="html/bookpage-nonfiction/bookpage15.html"
+              class="book-name"
+              >The Traveling Stones:A Memoir</a
+            >
+            <p class="book-author">by Celeste Weaver</p>
+            <p class="book-price">14.90€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-nonfiction/bookpage21.html"
+              ><img src="assets/images/homepage/non-fiction3.png" alt="non-fiction3"
+            /></a>
+            <a
+              href="html/bookpage-nonfiction/bookpage21.html"
+              class="book-name"
+              >Portals</a
+            >
+            <p class="book-author">by Douglas E. Richards</p>
+            <p class="book-price">4.90€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-nonfiction/bookpage16.html"
+              ><img src="assets/images/homepage/non-fiction4.png" alt="non-fiction4"
+            /></a>
+            <a
+              href="html/bookpage-nonfiction/bookpage16.html"
+              class="book-name"
+              >Traveling Light: Poems</a
+            >
+            <p class="book-author">by Linda Pastan</p>
+            <p class="book-price">10.24€</p>
+          </div>
+          <a href="html/non-fiction.html"
+            ><i
+              class="fa-solid fa-angles-right fa-2xl"
+              style="color: #d0b690"
+            ></i
+          ></a>
+        </div>
+      </section>
+      <!-- Category -->
+      <section class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1>
+            <a href="html/more-to-explore.html">More to explore</a>
+          </h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="html/bookpage-toexplore/bookpage29.html"
+              ><img src="assets/images/homepage/explore1.png" alt="explore1"
+            /></a>
+            <a href="html/bookpage-toexplore/bookpage29.html" class="book-name">One Piece, Vol. 12</a>
+            <p class="book-author-op">by Eiichiro Oda</p>
+            <p class="book-price-op">8.50€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-toexplore/bookpage30.html"
+              ><img src="assets/images/homepage/explore2.png" alt="explore2"
+            /></a>
+            <a href="html/bookpage-toexplore/bookpage30.html" class="book-name">Ao Haru Ride, Vol. 6</a>
+            <p class="book-author">by Io Sakisaka</p>
+            <p class="book-price">10.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-toexplore/bookpage27.html"
+              ><img src="assets/images/more-to-explore/bs3.png" alt="explore3"
+            /></a>
+            <a href="html/bookpage-toexplore/bookpage27.html" class="book-name"
+              >The Chronicles of Narnia</a
+            >
+            <p class="book-author">by C.S. Lewis</p>
+            <p class="book-price">18.99€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="html/bookpage-toexplore/bookpage34.html"
+              ><img src="assets/images/homepage/explore4.png" alt="explore4"
+            /></a>
+            <a href="html/bookpage-toexplore/bookpage34.html" class="book-name">The Hunger Games</a>
+            <p class="book-author">by Suzanne Collins</p>
+            <p class="book-price">16.61€</p>
+          </div>
+          <a href="html/more-to-explore.html"
+            ><i
+              class="fa-solid fa-angles-right fa-2xl"
+              style="color: #d0b690"
+            ></i
+          ></a>
+        </div>
+      </section>
+      <!-- Just an extra button with no actual functionality but design of the website -->
+      <div class="see-more-container">
+        <a class="see-more" href="">See more</a>
+      </div>
+      <section class="video-section">
+        <div class="video-section-header">
+          <span></span>
+          <h1>Popular Book Reviews</h1>
+          <span></span>
+        </div>
+
+        <div class="video-container">
+          <div class="video">
+            <div class="video-border">
+              <!-- Using iframe for better layout and convenience -->
+              <iframe
+                src="https://www.youtube.com/embed/NLf4I75-ymE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-title">the best books of 2022</p>
+          </div>
+
+          <div class="video">
+            <div class="video-border">
+              <iframe
+                src="https://www.youtube.com/embed/yhYU4ZbLmmk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-title">
+              Why should you read “Dune” by Frank Herbert? - Dan Kwartler
+            </p>
+          </div>
+
+          <div class="video">
+            <div class="video-border">
+              <iframe
+                src="https://www.youtube.com/embed/eDa1U9qJKxo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-title">
+              Rich Dad Poor Dad by Robert Kiyosaki (Detailed Summary)
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <!-- Each title contains the sub-titles -->
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Home</a></li>
+              <li class="footer-btn">
+                <a href="html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li><a href="">Copyright</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

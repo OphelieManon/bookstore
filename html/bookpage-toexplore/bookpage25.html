@@ -1,0 +1,228 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/global.css" />
+    <link rel="stylesheet" href="../../style/bookpage.css" />
+    <link rel="icon" href="../../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>The Little Prince</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../../index.html">
+        <img
+          class="logo"
+          src="../../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <!-- Hamburger lines method for responsive navigation bar -->
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span
+      ></label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/fiction.html">Horror/Thriller</a>
+              <a href="../../html/fiction.html"> Romance</a>
+              <a href="../../html/fiction.html"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/non-fiction.html">Cooking</a>
+              <a href="../../html/non-fiction.html">Traveling</a>
+              <a href="../../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../../html/more-to-explore.html">Best Sellers</a>
+              <a href="../../html/more-to-explore.html">Manga Collection</a>
+              <a href="../../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Book's path breadcrumb-->
+      <p class="breadcrumb">
+        <a href="../../index.html">Home</a>/<a
+          href="../../html/more-to-explore.html"
+          >More To Explore</a
+        >/The little prince(Le Petit Prince)
+      </p>
+      <section class="book-general">
+        <div class="image">
+          <div class="main-image">
+            <img
+              src="../../assets/images/more-to-explore/bs1.png"
+              alt="best-sellers1"
+            />
+          </div>
+          <div class="sub-images">
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs1/princepic2.png"
+              alt="pic2"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs1/princepic3.png"
+              alt="pic3"
+            />
+            <img
+              src="../../assets/images/more-to-explore/best-sellers/bs1/princepic4.png"
+              alt="pic4"
+            />
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="card-container">
+            <h1>The Little Prince</h1>
+            <p>by <span>Antoine de Saint-Exupéry</span></p>
+            <div class="star-container">
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>4.5/5</p>
+            </div>
+
+            <p class="price">Price: 6.89€</p>
+            <p>Publisher: Clarion Books; First edition (May 15, 2000)</p>
+            <p>Paperback: 96 pages</p>
+            <p>Dimensions: 7 x 0.51 x 8.75 inches</p>
+            <p>Genre: Best sellers, Fable</p>
+            <button class="cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-detail">
+        <h1 class="book-detail-header">Book Detail</h1>
+        <div class="book-detail-content">
+          <p>
+            Combining Richard Howard's translation with restored original
+            full-color art, this definitive English-language edition of The
+            Little Prince will capture the hearts of readers of all ages.
+            <br />
+            Few stories are as widely read and as universally cherished by
+            children and adults alike as The Little Prince. When a pilot crashes
+            in the Sahara Desert, he meets a little boy who asks him to draw a
+            sheep. Gradually the Little Prince reveals more about himself: He
+            comes from a small asteroid, where he lived alone until a rose grew
+            there. <br />
+            But the rose grew demanding, and he was confused by his feelings
+            about her. The story unfolds further from one planet to the next in
+            a thoughtful philosophical exploration of love and the ephemeral.
+            <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="review">
+        <h1 class="review-header">Review</h1>
+        <div class="review-content">
+          <div class="reviewer">
+            <div class="avatar">
+              <img src="../../assets/images/bookpage/iconpfp.png" alt="icon" />
+            </div>
+            <div class="reviewer-info">
+              <p>By Esoterica, April 2, 2023</p>
+              <div class="rating-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="comment">
+            If there is one book to recommend for any age, that would be The
+            Little Prince.So this is what I got for my coworker who had book
+            themed baby shower.Hope her and her baby will like it too.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="../../html/fiction.html">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

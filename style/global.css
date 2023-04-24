@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jacques+Francois+Shadow&family=Marcellus+SC&family=Montserrat:wght@300&family=Playball&family=Nunito&family=Limelight&display=swap");
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.youtube.com/watch?v=HQopEEurQYE + https://www.w3schools.com/css/css_rwd_videos.asp: responsive */
+
+/* CSS reset method*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  content: "";
+}
+
+body {
+  height: fit-content;
+}
+html {
+  font-size: 100%;
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #ecefe3;
+  height: auto;
+}
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #e6ebd8;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+}
+/* Logo styling */
+.logo-container {
+  display: flex;
+  gap: 3px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #04431d;
+  font-family: "Marcellus SC", cursive;
+  width: fit-content;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: auto;
+}
+/* Navigation bar styling */
+.navbar-container {
+  width: 50%;
+}
+#check {
+  display: none;
+}
+
+li a {
+  font-family: "Marcellus SC", serif;
+  color: #04431d;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+}
+
+li i {
+  color: #04431d;
+  position: relative;
+}
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #04431d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar li:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-out;
+}
+.dropdown-btn {
+  display: none;
+  position: absolute;
+  background-color: rgb(230, 235, 216, 0.9);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(19, 19, 19, 0.772);
+  z-index: 1;
+}
+.dropdown-btn a {
+  float: none;
+  color: #04431d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-btn a:hover {
+  background-color: #a0b99c;
+}
+.dropdown:hover .dropdown-btn {
+  display: block;
+  margin-top: 3px;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #a0b99c;
+  margin-top: 150px;
+  padding: 50px 15px;
+  color: #04431d;
+  width: 100%;
+}
+
+.footer-name {
+  font-family: "Marcellus SC";
+  font-weight: 400;
+  font-size: 24px;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  justify-content: space-around;
+}
+.footer-name {
+  color: #04431d;
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 33px;
+}
+.footer-column {
+  padding: 0 20px;
+  width: 30%;
+}
+.footer-list {
+  width: 100%;
+  margin: auto;
+}
+
+.footer-column h4 {
+  font-family: "Montserrat", serif;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-column ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.footer-column ul li {
+  font-family: "Montserrat", serif;
+  font-size: 13px;
+}
+.footer-column ul li a {
+  display: block;
+  text-align: center;
+}
+.footer-column ul li a:hover {
+  color: #defcf7;
+  padding-left: 3px;
+}
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* Responsive */
+@media (max-width: 960px) {
+  /* for mobile devices */
+  /* For the title and logo to force them to be on the left while the hamburger menu will be on the right */
+  header {
+    justify-content: space-between;
+    /* For the menu to occupy another line */
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  /* To hide the menu by using the max-height and overflow:hidden */
+  .navbar-container {
+    max-height: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  /* re-arrange the components in the menu */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+  /* not displaying the sub-categories dropdown menu */
+  .dropdown-btn a {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 40%;
+  }
+
+  .menu-container {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+  }
+
+  /* Style label tag */
+  /* To create and decorate the hamburger */
+  .menu {
+    background: #04431d;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+  /* settings of the positions of the other 2 lines of the hambuger menu */
+  .menu::before,
+  .menu::after {
+    background: #04431d;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  /* First goes on top */
+  .menu::before {
+    top: 5px;
+  }
+  /* third goes to the bottom */
+  .menu::after {
+    top: -5px;
+  }
+  /* When pressing on the hamburger the line between becomes transparent */
+  .check:checked ~ .menu-container .menu {
+    background: transparent;
+  }
+  /* The remaining two lines will rotate*/
+  .check:checked ~ .menu-container .menu::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .check:checked ~ .menu-container .menu::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  /* Make the navigation bar full screen */
+  .check:checked ~ .navbar-container {
+    max-height: 100%;
+  }
+}

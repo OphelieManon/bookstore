@@ -1,0 +1,308 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Ophelie Manon
+ID: 3968993
+Acknowledgement:  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp : dropdown menu,https://alvarotrigo.com/blog/website-footers/ : footer idea,
+https://www.w3schools.com/css/css_rwd_images.asp + https://www.w3schools.com/css/css_rwd_videos.asp: responsive,<a href="https://www.flaticon.com/free-icons/novel" title="novel icons">Novel icons created by Freepik - Flaticon</a>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/fiction.css" />
+    <link rel="icon" href="../assets/images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Fiction</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a class="logo-container" href="../index.html">
+        <img
+          class="logo"
+          src="../assets/images/logo.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <h2 class="logo">Little Rivendell</h2>
+      </a>
+
+      <input type="checkbox" class="check" id="check" />
+      <label for="check" class="menu-container"
+        ><span class="menu"></span>
+      </label>
+
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li class="items"><a href="../index.html">Home</a></li>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/fiction.html">Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="#horror">Horror/Thriller</a>
+              <a href="#romance"> Romance</a>
+              <a href="#fantasy"> Fantasy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/non-fiction.html">Non Fiction</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/non-fiction.html">Cooking</a>
+              <a href="../html/non-fiction.html">Traveling</a>
+              <a href="../html/non-fiction.html">Science-Tech</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li class="items drop">
+              <a href="../html/more-to-explore.html">More To Explore</a>
+            </li>
+            <div class="dropdown-btn">
+              <a href="../html/more-to-explore.html">Best Sellers</a>
+              <a href="../html/more-to-explore.html">Manga Collection</a>
+              <a href="../html/more-to-explore.html">Second Hand Books</a>
+            </div>
+          </div>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-container">
+      <div class="img2">
+        <div class="img"></div>
+      </div>
+      <div class="img1">
+        <img
+          src="../assets/images/fiction/banner-fiction2.png"
+          alt="bannerpic2"
+        />
+        <div class="banner-text-img">
+          <p>Best Selected</p>
+          <br />
+          <p>Fiction Books</p>
+          <br />
+          <p>of 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+      <!-- Horror Thriller Category -->
+      <section id="horror" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#horror">Horror-Thriller</a></h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage1.html"
+              ><img src="../assets/images/fiction/horror1.png" alt="horror1"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage1.html" class="book-name"
+              >IT: A Novel</a
+            >
+            <p class="book-author">by Stephen King</p>
+            <p class="book-price">18.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage2.html">
+              <img src="../assets/images/fiction/horror2.png" alt="horror2"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage2.html" class="book-name"
+              >The Exorcist: A Novel
+            </a>
+            <p class="book-author">by William Peter Blatty</p>
+            <p class="book-price">15.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage3.html">
+              <img src="../assets/images/fiction/horror3.png" alt="horror3"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage3.html" class="book-name"
+              >The Last Thing He Told Me</a
+            >
+            <p class="book-author">by Laura Dave</p>
+            <p class="book-price">16.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage4.html">
+              <img src="../assets/images/fiction/horror4.png" alt="horror4"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage4.html" class="book-name"
+              >The Perfect Marriage</a
+            >
+            <p class="book-author">by Jeneva Rose</p>
+            <p class="book-price">11.50€</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Romance Category -->
+      <section id="romance" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#romance">Romance</a></h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage5.html"
+              ><img src="../assets/images/homepage/fiction1.jpg" alt="romance1"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage5.html" class="book-name"
+              >It ends with us</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">10.31€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage6.html"
+              ><img src="../assets/images/homepage/fiction2.jpg" alt="romance2"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage6.html" class="book-name"
+              >It starts with us</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">36.23€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage7.html"
+              ><img src="../assets/images/fiction/romance3.png" alt="romance3"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage7.html" class="book-name"
+              >Reminders of Him</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">36.23€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage8.html"
+              ><img src="../assets/images/fiction/romance4.png" alt="romance4"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage8.html" class="book-name"
+              >Ugly Love</a
+            >
+            <p class="book-author">by Colleen Hoover</p>
+            <p class="book-price">32.00€</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fantasy Category -->
+      <section id="fantasy" class="category-container">
+        <div class="category-header">
+          <span></span>
+          <h1><a href="#fantasy">Fantasy</a></h1>
+          
+          <span></span>
+        </div>
+        <div class="category">
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage9.html"
+              ><img src="../assets/images/fiction/fantasy1.png" alt="fantasy1"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage9.html" class="book-name"
+              >Fairy Tale</a
+            >
+            <p class="book-author">by Stephen King</p>
+            <p class="book-price">16.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage10.html"
+              ><img src="../assets/images/fiction/fantasy2.png" alt="fantasy2"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage10.html" class="book-name"
+              >A Court of Thorns and Roses</a
+            >
+            <p class="book-author">by Sarah J. Maas</p>
+            <p class="book-price">18.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage11.html"
+              ><img src="../assets/images/fiction/fantasy3.png" alt="fantasy3"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage11.html" class="book-name"
+              >Dune</a
+            >
+            <p class="book-author">by Frank Hervert</p>
+            <p class="book-price">17.00€</p>
+          </div>
+          <hr />
+          <div class="book">
+            <a href="../html/bookpage-fiction/bookpage12.html"
+              ><img src="../assets/images/fiction/fantasy4.png" alt="fantasy4"
+            /></a>
+            <a href="../html/bookpage-fiction/bookpage12.html" class="book-name"
+              >The Left Hand of Darkness</a
+            >
+            <p class="book-author">by Usula K. Le Guin</p>
+            <p class="book-price">14.00€</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-name">Little Rivendell</p>
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="../index.html">Home</a></li>
+              <li class="footer-btn">
+                <a href="">Fiction</a>
+              </li>
+              <li class="footer-btn">
+                <a href="../html/non-fiction.html">Non Fiction</a>
+              </li>
+              <li class="footer-btn>">
+                <a href="../html/more-to-explore.html">More to Explore</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul class="footer-list">
+              <li class="footer-btn">
+                <a href="../html/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer-btn"><a href="">Product care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Get to Know</h4>
+            <ul class="footer-list">
+              <li class="footer-btn"><a href="">Terms and conditions</a></li>
+              <li class="footer-btn"><a href="">Copyright</a></li>
+              <li class="footer-btn"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
